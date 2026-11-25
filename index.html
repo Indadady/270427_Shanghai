@@ -281,11 +281,9 @@
 
         <section id="home" class="hero-bg min-h-[72vh] flex items-center justify-center text-center px-4">
             <div class="text-white z-10 w-full max-w-4xl py-16">
-                <div class="inline-flex flex-wrap items-center justify-center gap-3 mb-5">
-                    <img src="assets/images/nuac-logo.jpg" alt="민주평화통일자문회의" class="h-14 md:h-16 bg-white/95 rounded-2xl px-3 py-2 object-contain shadow-lg">
-                    <img src="assets/images/syncverse-logo.png" alt="SYNCVERSE" class="h-10 md:h-12 bg-white/90 rounded-xl px-3 py-1.5 object-contain shadow-lg">
+                <div class="flex justify-center mb-6">
+                    <img src="assets/images/nuac-logo.jpg" alt="민주평화통일자문회의" class="h-20 md:h-28 bg-white/95 rounded-3xl px-5 py-3 object-contain shadow-2xl">
                 </div>
-                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full text-sm font-bold mb-5 inline-block border border-white/30">민주평화통일자문회의 · 상해·항주·주가각</span>
                 <h1 class="text-4xl md:text-6xl font-bold mb-5 font-[Nanum_Myeongjo] leading-tight">상해·항주·주가각<br><span class="text-blue-200">3박 4일</span></h1>
                 <div class="flex flex-wrap justify-center gap-2 mb-4">
                     <span class="bg-black/45 border border-white/20 px-3 py-1.5 rounded-full text-xs font-bold">2027.04.27 또는 05.18 출발</span>
@@ -607,9 +605,18 @@
                     <h2 class="text-3xl font-bold">숙소</h2>
                     <p class="text-sm text-slate-500 mt-2">일정표 기준 호텔입니다. 예약·현지 사정에 따라 동급으로 바뀔 수 있습니다.</p>
                 </div>
-                <div class="grid md:grid-cols-2 gap-4 text-sm">
-                    <article class="rounded-3xl border border-slate-200 overflow-hidden bg-slate-50">
-                        <img src="assets/images/hotel-jianguo.jpg" alt="항주 백마호 건국 호텔" class="w-full h-40 object-cover">
+                <div class="grid md:grid-cols-2 gap-5 text-sm">
+                    <article class="rounded-3xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm">
+                        <div class="grid grid-cols-2 gap-1 bg-slate-200/70">
+                            <div class="relative">
+                                <img src="assets/images/hotel-jianguo.jpg" alt="항주 호텔 전경" class="w-full h-40 object-cover">
+                                <span class="absolute bottom-2 left-2 bg-slate-900/75 text-white text-[11px] font-bold px-2 py-0.5 rounded">호텔 전경</span>
+                            </div>
+                            <div class="relative">
+                                <img src="assets/images/hotel-jianguo-room.jpg" alt="항주 호텔 객실" class="w-full h-40 object-cover">
+                                <span class="absolute bottom-2 left-2 bg-slate-900/75 text-white text-[11px] font-bold px-2 py-0.5 rounded">객실</span>
+                            </div>
+                        </div>
                         <div class="p-6">
                             <p class="text-xs font-bold text-sky-700 mb-2">1박 · 1일차 · 항주</p>
                             <h3 class="font-bold text-lg mb-2">항주 백마호 건국 호텔 또는 동급</h3>
@@ -617,8 +624,17 @@
                             <p class="text-xs text-slate-500 leading-relaxed">주소: 浙江省杭州市滨江区长江南路336号<br>영문: No.336 Changjiang South Rd, Binjiang, Hangzhou<br>송성·백마호 일대. 서호까지 차량 이동.</p>
                         </div>
                     </article>
-                    <article class="rounded-3xl border border-slate-200 overflow-hidden bg-slate-50">
-                        <img src="assets/images/hotel-manxin.jpg" alt="상해 만신호텔" class="w-full h-40 object-cover">
+                    <article class="rounded-3xl border border-slate-200 overflow-hidden bg-slate-50 shadow-sm">
+                        <div class="grid grid-cols-2 gap-1 bg-slate-200/70">
+                            <div class="relative">
+                                <img src="assets/images/hotel-manxin.jpg" alt="상해 호텔 전경" class="w-full h-40 object-cover">
+                                <span class="absolute bottom-2 left-2 bg-slate-900/75 text-white text-[11px] font-bold px-2 py-0.5 rounded">호텔 전경</span>
+                            </div>
+                            <div class="relative">
+                                <img src="assets/images/hotel-manxin-room.jpg" alt="상해 호텔 객실" class="w-full h-40 object-cover">
+                                <span class="absolute bottom-2 left-2 bg-slate-900/75 text-white text-[11px] font-bold px-2 py-0.5 rounded">객실</span>
+                            </div>
+                        </div>
                         <div class="p-6">
                             <p class="text-xs font-bold text-emerald-700 mb-2">2~3박 · 2·3일차 · 상해</p>
                             <h3 class="font-bold text-lg mb-2">상해 만신호텔(정안) 또는 동급</h3>
@@ -627,6 +643,7 @@
                         </div>
                     </article>
                 </div>
+                <p class="text-xs text-slate-500 text-center mt-4">※ 사진은 준5성급 호텔 전경·객실 안내 이미지이며, 실제 배정 호텔·객실 타입은 동급으로 바뀔 수 있습니다.</p>
             </div>
         </section>
 
@@ -634,15 +651,28 @@
             <div class="container mx-auto px-4 max-w-6xl">
                 <div class="text-center mb-8">
                     <h2 class="text-3xl font-bold">여행에 도움 되는 정보</h2>
-                    <p class="text-sm text-slate-500 mt-2">실시간 상해 날씨와 오늘 추천 옷차림을 함께 확인하세요.</p>
+                    <p class="text-sm text-slate-500 mt-2">상해·항주 실시간 날씨와 오늘 추천 옷차림을 함께 확인하세요.</p>
                 </div>
                 <div class="grid lg:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-6 text-white">
-                        <h3 class="text-sm font-bold text-blue-100 mb-2">상해 실시간 날씨 · 추천 옷차림</h3>
-                        <p id="weather-temp" class="text-5xl font-black">--°</p>
-                        <p id="weather-desc" class="text-sm mt-1">불러오는 중</p>
-                        <p id="clothing-desc" class="text-xs mt-4 bg-white/15 rounded-xl p-3 leading-relaxed">낮에는 따뜻하고 저녁·강변은 서늘할 수 있습니다.</p>
-                        <div id="weekly-forecast" class="flex gap-2 overflow-x-auto no-scrollbar mt-4 text-xs"></div>
+                    <div class="bg-white rounded-3xl border border-blue-100 shadow-sm p-6">
+                        <h3 class="font-bold text-lg text-slate-800 mb-4 flex items-center gap-2"><i class="fa-solid fa-cloud-sun text-blue-500"></i> 실시간 날씨 · 5일 예보</h3>
+                        <div class="space-y-5">
+                            <div>
+                                <div class="flex items-center justify-between mb-2">
+                                    <p class="text-xs font-extrabold text-cyan-700"><i class="fa-solid fa-location-dot mr-1"></i>항주 <span class="font-medium text-slate-400">(1~2일차)</span></p>
+                                    <p id="weather-hz-now" class="text-xs font-bold text-slate-500">불러오는 중</p>
+                                </div>
+                                <div id="weather-hangzhou" class="grid grid-cols-5 gap-1.5 sm:gap-2"><div class="text-center text-sm text-slate-500 col-span-5 py-3">불러오는 중...</div></div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between mb-2">
+                                    <p class="text-xs font-extrabold text-indigo-700"><i class="fa-solid fa-location-dot mr-1"></i>상해 <span class="font-medium text-slate-400">(2~4일차)</span></p>
+                                    <p id="weather-sh-now" class="text-xs font-bold text-slate-500">불러오는 중</p>
+                                </div>
+                                <div id="weather-shanghai" class="grid grid-cols-5 gap-1.5 sm:gap-2"><div class="text-center text-sm text-slate-500 col-span-5 py-3">불러오는 중...</div></div>
+                            </div>
+                        </div>
+                        <p id="clothing-desc" class="text-xs mt-4 bg-blue-50 border border-blue-100 text-slate-700 rounded-xl p-3.5 leading-relaxed">낮에는 따뜻하고 저녁·강변은 서늘할 수 있습니다. 서호·주가각은 걷는 구간이 많아 편한 운동화를 준비해 주세요.</p>
                     </div>
                     <div class="bg-white rounded-3xl border border-slate-200 p-6 flex flex-col justify-center">
                         <h3 class="font-bold text-lg mb-2">입국·준비 팁</h3>
@@ -1003,6 +1033,17 @@
             memo.addEventListener('input', () => localStorage.setItem(key, memo.value));
         })();
 
+        function weatherIcon(code) {
+            if (code <= 1) return '☀️';
+            if (code === 2) return '⛅';
+            if (code === 3) return '☁️';
+            if (code === 45 || code === 48) return '🌫️';
+            if (code >= 51 && code <= 67) return '🌧️';
+            if (code >= 71 && code <= 77) return '❄️';
+            if (code >= 80 && code <= 82) return '🌦️';
+            if (code >= 95) return '⛈️';
+            return '🌥️';
+        }
         function weatherLabel(code) {
             if (code <= 1) return '맑음';
             if (code <= 3) return '구름';
@@ -1024,25 +1065,54 @@
             else parts.push('서호·주가각은 걷는 구간이 많아 편한 운동화가 좋습니다.');
             return parts.join(' ');
         }
+        function renderWeatherGrid(containerId, weatherData) {
+            const container = document.getElementById(containerId);
+            if (!container || !weatherData?.daily) {
+                if (container) container.innerHTML = '<div class="text-xs text-red-500 col-span-5 text-center py-2">날씨를 불러오지 못했습니다.</div>';
+                return;
+            }
+            const codes = weatherData.daily.weather_code || weatherData.daily.weathercode || [];
+            const days = ['일','월','화','수','목','금','토'];
+            let html = '';
+            for (let i = 0; i < Math.min(5, (weatherData.daily.time || []).length); i++) {
+                const d = new Date(weatherData.daily.time[i] + 'T12:00:00');
+                const label = i === 0 ? '오늘' : days[d.getDay()];
+                const icon = weatherIcon(codes[i]);
+                const tMax = Math.round(weatherData.daily.temperature_2m_max[i]);
+                const tMin = Math.round(weatherData.daily.temperature_2m_min[i]);
+                html += '<div class="bg-slate-50 border border-slate-100 rounded-xl px-1 py-2.5 sm:p-3 text-center min-w-0">'
+                    + '<div class="text-[10px] sm:text-xs font-bold text-slate-500 mb-0.5">' + label + '</div>'
+                    + '<div class="text-base sm:text-lg leading-none">' + icon + '</div>'
+                    + '<div class="text-[11px] sm:text-xs font-black text-slate-800 mt-1">' + tMin + '°/' + tMax + '°</div>'
+                    + '<div class="text-[10px] text-slate-400 mt-0.5 truncate">' + weatherLabel(codes[i]) + '</div>'
+                    + '</div>';
+            }
+            container.innerHTML = html || '<div class="text-xs text-red-500 col-span-5 text-center py-2">날씨 정보가 없습니다.</div>';
+        }
         async function initWeather() {
             try {
-                const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude=31.23&longitude=121.47&current_weather=true&daily=temperature_2m_max,temperature_2m_min,weathercode&timezone=Asia%2FShanghai');
-                const data = await res.json();
-                const temp = Math.round(data.current_weather.temperature);
-                const code = data.current_weather.weathercode;
-                const tmax = Math.round(data.daily.temperature_2m_max[0]);
-                const tmin = Math.round(data.daily.temperature_2m_min[0]);
-                document.getElementById('weather-temp').textContent = temp + '°';
-                document.getElementById('weather-desc').textContent = '상해 지금 · ' + weatherLabel(code) + ' · 오늘 ' + tmin + '°/' + tmax + '°';
-                document.getElementById('clothing-desc').textContent = clothingAdvice(temp, code, tmax, tmin);
-                const days = ['일','월','화','수','목','금','토'];
-                document.getElementById('weekly-forecast').innerHTML = data.daily.time.slice(0, 5).map((t, i) => {
-                    const d = new Date(t + 'T12:00:00');
-                    const c = data.daily.weathercode[i];
-                    return '<div class="bg-white/15 rounded-xl px-2 py-1 text-center min-w-[58px]"><div>' + (i === 0 ? '오늘' : days[d.getDay()]) + '</div><div class="font-bold">' + Math.round(data.daily.temperature_2m_min[i]) + '/' + Math.round(data.daily.temperature_2m_max[i]) + '</div><div class="opacity-80">' + weatherLabel(c) + '</div></div>';
-                }).join('');
+                const [hzRes, shRes] = await Promise.all([
+                    fetch('https://api.open-meteo.com/v1/forecast?latitude=30.2741&longitude=120.1551&current_weather=true&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Asia%2FShanghai&forecast_days=5'),
+                    fetch('https://api.open-meteo.com/v1/forecast?latitude=31.2304&longitude=121.4737&current_weather=true&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Asia%2FShanghai&forecast_days=5')
+                ]);
+                const hz = await hzRes.json();
+                const sh = await shRes.json();
+                renderWeatherGrid('weather-hangzhou', hz);
+                renderWeatherGrid('weather-shanghai', sh);
+                const hzTemp = Math.round(hz.current_weather.temperature);
+                const shTemp = Math.round(sh.current_weather.temperature);
+                const hzCode = hz.current_weather.weathercode;
+                const shCode = sh.current_weather.weathercode;
+                document.getElementById('weather-hz-now').textContent = '지금 ' + hzTemp + '° · ' + weatherLabel(hzCode);
+                document.getElementById('weather-sh-now').textContent = '지금 ' + shTemp + '° · ' + weatherLabel(shCode);
+                const tmax = Math.round(Math.max(hz.daily.temperature_2m_max[0], sh.daily.temperature_2m_max[0]));
+                const tmin = Math.round(Math.min(hz.daily.temperature_2m_min[0], sh.daily.temperature_2m_min[0]));
+                document.getElementById('clothing-desc').textContent = clothingAdvice(shTemp, shCode, tmax, tmin);
             } catch (e) {
-                document.getElementById('weather-desc').textContent = '날씨를 불러오지 못했습니다.';
+                ['weather-hangzhou', 'weather-shanghai'].forEach((id) => {
+                    const el = document.getElementById(id);
+                    if (el) el.innerHTML = '<div class="text-xs text-red-500 col-span-5 text-center py-2">날씨를 불러오지 못했습니다.</div>';
+                });
                 document.getElementById('clothing-desc').textContent = '4~5월 상해·항주는 일교차가 있습니다. 얇은 겉옷과 편한 신발을 준비해 주세요.';
             }
         }
